@@ -8,7 +8,7 @@ def validate_password(password):
     return has_digit and has_letter
 
 
-
-
 def safe_divide(a, b):
-    return a / b  
+    if b == 0:
+        return None
+    return a / b
