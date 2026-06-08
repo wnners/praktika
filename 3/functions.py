@@ -1,11 +1,4 @@
 def validate_password(password):
-    """
-    Проверяет пароль по правилам:
-    - минимум 8 символов
-    - минимум 1 цифра
-    - минимум 1 буква
-    - без пробелов
-    """
     if len(password) < 8:
         return False
     if ' ' in password:
